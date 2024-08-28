@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Decodificador - Alana</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.google.com/specimen/Inter?query=inter" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="imagens/logo.png" alt="Logo da Alura"></h1>
+            </div>
+        </header>
+
+        <main> 
+            <section>
+                <textarea class="textoarea" required placeholder="Digite seu texto..."></textarea>
+                
+                <div class="alerta">
+                    <p>Apenas letras minúsculas e sem acento!</p>
+                </div>
+
+                <div class="botoes">
+                    <button type="button" class="criptografar" onClick="criptografia()">Criptografar</button>
+                    <button type="button" class="descriptografar" onClick="descriptografia()">Descriptografar</button>
+                </div>
+            </section>
+
+            <section class="resultado">
+                <textarea class="mensagem" cols="20 " rows="11 " placeholder="Nenhuma mensagem encontrada"></textarea>
+                <button type="button" class="copiar" onClick="copia()">Copiar</button>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
